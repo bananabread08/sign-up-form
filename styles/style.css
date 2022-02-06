@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root {
+  --primary: green;
+  --accent: gainsboro;
+  --secondary: white;
+  --translucent-blk: rgba(19, 18, 18, 0.479);
+}
+
 html,
 body {
   box-sizing: border-box;
@@ -20,7 +27,7 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: var(--secondary);
 }
 
 .img-container {
@@ -38,18 +45,24 @@ header {
   justify-content: center;
   width: 100%;
   position: absolute;
-  top: 30%;
-  background-color: rgba(19, 18, 18, 0.322);
+  top: 20%;
+  background-color: var(--translucent-blk);
 }
 
-h1 {
-  color: white;
+header img {
+  height: 70px;
+  width: auto;
+}
+
+header h1 {
+  color: var(--secondary);
+  font-size: 30px;
 }
 
 main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  height: 100%;
 }
 
 p {
@@ -58,18 +71,31 @@ p {
 }
 
 .top-content {
-  background-color: gainsboro;
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accent);
+  padding: 30px 0 0 20px;
+  height: 35%;
 }
 
 .form-content {
+  height: 40%;
   padding: 10px;
+  box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.51);
+}
+
+.form-content p {
+  margin-left: 10px;
 }
 
 form {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px;
 }
 
 form > * {
@@ -81,19 +107,26 @@ form label {
 }
 
 form input {
-  width: clamp(90%, 230px, 100%);
-  padding: 10px;
+  width: clamp(90%, 210px, 100%);
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid purple;
 }
 
 .bottom-content {
-  background-color: gainsboro;
+  background-color: var(--accent);
   padding: 10px;
   margin-top: 10px;
+  height: 25%;
 }
 
 button {
   padding: 10px 30px;
-  background-color: white;
+  background-color: var(--secondary);
   border: 1px solid black;
 }
 
@@ -103,12 +136,16 @@ button {
     height: 100vh;
   }
 
+  header img {
+    height: 200px;
+  }
+
+  header h1 {
+    font-size: 70px;
+  }
+
   .img-container {
     min-width: 450px;
     height: 100%;
   }
-
-  /* form input {
-    width: 230px;
-  } */
 }
