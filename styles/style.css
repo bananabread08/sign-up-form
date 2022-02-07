@@ -33,7 +33,7 @@ body {
 
 .img-container {
   position: relative;
-  background-image: url(../assets/neon-city-wallpaper-1920×1200.JPG);
+  background-image: url('../assets/neon-city-wallpaper-1920×1200.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
