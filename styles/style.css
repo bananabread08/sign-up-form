@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 :root {
-  --primary: #4f7b27;
+  --primary: #3e2b6a;
   --accent: gainsboro;
   --secondary: #fff;
   --translucent-blk: rgba(19, 18, 18, 0.479);
@@ -171,7 +171,7 @@ button {
 }
 
 button:hover {
-  background-color: #7dbe40;
+  background-color: #583e96;
 }
 
 @media only screen and (min-width: 900px) {
