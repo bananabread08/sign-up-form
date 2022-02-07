@@ -139,6 +139,18 @@ input:focus {
   border: 2px solid var(--neon);
 }
 
+.password-wrapper {
+  position: relative;
+}
+
+.error {
+  display: none;
+  color: red;
+  position: absolute;
+  left: 0;
+  bottom: -1em;
+}
+
 .bottom-content {
   background-color: var(--accent);
   padding: 10px;

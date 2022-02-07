@@ -30,14 +30,18 @@
         </section>
         <section class="form-content">
           <p>Let's do this!</p>
-          <form id="my-form">
+          <form id="my-form" method="GET">
             <div>
               <label for="first-name">First Name:</label>
               <input type="text" id="first-name" required />
               <label for="email">Email:</label>
               <input type="email" id="email" required />
-              <label for="password">Password:</label>
-              <input type="password" id="password" required />
+              <div class="password-wrapper">
+                <label for="password">Password:</label>
+                <input type="password" id="password" required />
+                <small class="error">Passwords do not match.</small>
+              </div>
+              
             </div>
 
             <div>
@@ -58,5 +62,6 @@
         <section/>
       </main>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
