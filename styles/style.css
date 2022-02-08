@@ -75,7 +75,6 @@ header h1 {
 }
 
 .attribution a {
-  text-decoration: none;
   list-style: none;
   color: inherit;
 }
@@ -125,14 +124,28 @@ form > * {
 
 form label {
   display: block;
+  text-transform: uppercase;
 }
 
-form input {
+form label.required::after {
+  color: #e32;
+  content: ' *';
+  display: inline;
+}
+
+input {
   width: clamp(90%, 210px, 100%);
   padding: 5px;
   margin-bottom: 10px;
 }
 
+input:invalid {
+  background-color: rgb(229, 143, 143);
+}
+
+input:valid {
+  background-color: aquamarine;
+}
 input:focus {
   outline: none;
   border: 2px solid var(--primary);
@@ -159,6 +172,10 @@ input:focus {
 
 .bottom-content p {
   font-size: 15px;
+}
+
+.bottom-content a {
+  color: var(--primary);
 }
 
 button {
