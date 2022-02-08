@@ -134,7 +134,7 @@ form label.required::after {
 }
 
 input {
-  width: clamp(90%, 210px, 100%);
+  width: clamp(90%, 160px, 100%);
   padding: 5px;
   margin-bottom: 10px;
 }
