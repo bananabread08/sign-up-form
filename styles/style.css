@@ -161,7 +161,7 @@ input:focus {
   position: absolute;
   left: 0;
   bottom: -1em;
-  font-size: 9px;
+  font-size: 12px;
 }
 
 .bottom-content {
@@ -209,5 +209,9 @@ button:hover {
   .img-container {
     min-width: 450px;
     height: 100%;
+  }
+
+  .error {
+    font-size: 15px;
   }
 }
